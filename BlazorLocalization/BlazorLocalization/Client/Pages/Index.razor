@@ -1,0 +1,16 @@
+﻿@page "/"
+@using BlazorLocalization.Client.Services
+@inject IStringLocalizer<ResourceLanguage> localizer
+@inject HttpClient http
+@inject LocalizedMessageService localizedMessageService
+
+<PageTitle>Index</PageTitle>
+
+<h1>@localizer["HelloWorld"]</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<p>@txt</p>
+

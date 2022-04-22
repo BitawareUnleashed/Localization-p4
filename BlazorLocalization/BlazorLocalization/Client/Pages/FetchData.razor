@@ -1,0 +1,28 @@
+﻿@page "/fetchdata"
+@using BlazorLocalization.Shared
+@using BlazorLocalization.Client.Services
+@inject HttpClient Http
+@inject IStringLocalizer<ResourceLanguage> localizer
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Weather forecast</h1>
+<EditForm Model=@WeatherForecast>
+    <DataAnnotationsValidator/>
+    <div class="form-group">
+        <label for="Name">Summary</label>
+        <InputText @bind-Value=WeatherForecast.Summary class="form-control" id="Summary"/>
+        <ValidationMessage For="() => WeatherForecast.Summary"/>
+    </div>
+    <div class="form-group">
+        <label for="Age">Temperature</label>
+        <InputNumber @bind-Value=WeatherForecast.TemperatureC class="form-control" id="TemperatureC"/>
+        <ValidationMessage For="() => WeatherForecast.TemperatureC"/>
+    </div>
+    <input type="submit" class="btn btn-primary" value="@localizer["Save"]"/>
+</EditForm>
+
+@code
+{
+    public WeatherForecast WeatherForecast { get; set; } = new WeatherForecast();
+}
