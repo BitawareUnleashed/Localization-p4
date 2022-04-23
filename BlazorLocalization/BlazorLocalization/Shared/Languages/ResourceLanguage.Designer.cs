@@ -68,5 +68,14 @@ namespace BlazorLocalization.Shared.Languages {
                 return ResourceManager.GetString("ErrorValidationRequired", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temperature must be beetween 18°C and 22°C.
+        /// </summary>
+        public static string TemperatureValidationMessageRange {
+            get {
+                return ResourceManager.GetString("TemperatureValidationMessageRange", resourceCulture);
+            }
+        }
     }
 }

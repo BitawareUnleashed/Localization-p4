@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ErrorValidationRequired" xml:space="preserve">
-    <value>The field is required</value>
+    <value>Il campo è richiesto</value>
   </data>
   <data name="TemperatureValidationMessageRange" xml:space="preserve">
-    <value>Temperature must be beetween 18°C and 22°C</value>
+    <value>La temperatura deve essere compresa tra 18°C e 22°C</value>
   </data>
 </root>
